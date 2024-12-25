@@ -1,0 +1,467 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ccff90;
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)
+}
+
+h6 {
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding-left: 24px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+}
+
+#sidebar {
+    display: flex;
+    gap: 32px;
+    padding-right: 24px;
+}
+
+#sidebar a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+    background-color: #ccff90;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    padding: 6px 8px;
+}
+
+#sidebar a svg {
+    display: none;
+}
+
+#sidebar a:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 616px;
+}
+
+#about {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#pphoto {
+    width: 40%;
+    height: 80%;
+    background-image: url(assets/programmer2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#about h1 {
+    font-size: 3.75rem;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+    margin-bottom: 0.35em;
+}
+
+#about h2 {
+    font-size: 2.125rem;
+    font-weight: 400;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+    margin-bottom: 0.35em;
+}
+
+#about p {
+    width: 75%;
+}
+
+#techc {
+    margin-top: 128px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.prog2 {
+    background-image: url(assets/programmer1.svg);
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#techs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#techs h1 {
+    margin-bottom: 0.35em;
+    font-size: 3.75rem;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+}
+
+#tlist {
+    display: flex;
+    flex-direction: row;
+}
+
+#tlist div {
+    margin: 20px;
+    height: 62px;
+    width: 62px;
+    background-size: cover;
+}
+
+.js {
+    height: 62px;
+    width: 62px;
+    background-image: url(assets/javascript.svg);
+}
+
+.md {
+    background-image: url(assets/mongodb.svg);
+}
+
+.node {
+    background-image: url(assets/nodejs.svg);
+    min-width: 82px;
+}
+
+.react {
+    background-image: url(assets/react.png);
+    min-width: 73px;
+    min-height: 64px;
+}
+#fproj {
+    margin-top: 60px;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.167;
+    letter-spacing: -0.01562em;
+    margin-bottom: 150px;
+}
+
+.spotify {
+    margin-bottom: 40px;
+}
+
+.spotify h2 {
+    font-size: 3.75rem;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+    margin-bottom: 21px;
+}
+
+#lproject {
+    width: 93%;
+}
+
+#projects,
+#lproject,
+.spotify,
+#play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#play {
+    flex-direction: row;
+    width: 100%;
+}
+
+#tvd {
+    width: 45%;
+    border-radius: 8px;
+}
+
+.transp {
+    font-size: 1rem;
+    width: 45%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.tools,
+.links {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tools h4 {
+    margin: 3.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.links a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    padding: 6px 8px;
+    border-radius: 100px;
+    margin-right: 4px;
+}
+
+.transp h6 {
+    margin-bottom: 16px;
+}
+
+#vmore {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.sproj {
+    margin-top: 85px;
+    width: 90%;
+    padding:20px 5%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+    align-items: center;
+    min-height: 550px;
+    overflow-x: scroll;
+}
+
+.sproj .simon,
+.ttt,
+.calc {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 6px 2px #00000014;
+    border-radius: 10px;
+    min-width: 280px;
+    max-width: 280px;
+    min-height: 499px;
+    max-height: 499px;
+}
+
+.sproj div video {
+    position: absolute;
+    width: 100.5%;
+    min-height: 100.4%;
+    max-height: 100.4%;
+    border-radius: 4px;
+}
+
+.trnsp {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trnsp .links {
+    margin-left: 0px;
+    margin-bottom: 8px;
+}
+
+.trnsp .links {
+    width: 100%;
+    justify-content: space-around;
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    background-color: #ccff90;
+    box-shadow: 0px -2px 4px -1px rgba(0, 0, 0, 0.2), 0px -4px 5px 0px rgba(0, 0, 0, 0.14), 0px -1px 10px 0px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    margin-top: 50px;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+footer a {
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@media (max-width:960px) {
+    #play {
+        flex-direction: column;
+    }
+
+    #tvd,
+    .transp {
+        width: 100%;
+    }
+
+    #tvd {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    #pphoto,
+    .prog2 {
+        display: none;
+    }
+
+    #about,
+    #techs {
+        width: 90%;
+    }
+
+    #sidebar {
+        gap: 8px;
+    }
+
+    #sidebar a p {
+        display: none;
+    }
+
+    #sidebar #apa {
+        display: none;
+        width: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #sidebar a svg {
+        display: flex;
+        min-width: 24px;
+        min-height: 24px;
+        max-width: 24px;
+        max-height: 24px;
+    }
+
+    #about p {
+        width: 100%;
+    }
+}
+
+@media (max-width:440px) {
+    #tlist div {
+        margin: 20px;
+        height: 42px;
+        width: 42px;
+        background-size: cover;
+    }
+
+    .node {
+        background-image: url(assets/nodejs.svg);
+        min-width: 52px;
+    }
+
+    .react {
+        background-image: url(assets/react.png);
+        min-width: 51.5px;
+        min-height: 45px;
+    }
+    #techs h1{
+        font-size: 2.75rem;
+    }
+    #fproj{
+        font-size: 2.75rem;
+    }
+    .spotify h2{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:360px) {
+    #tlist div {
+        margin: 15px;
+        height: 32px;
+        width: 32px;
+        background-size: cover;
+    }
+
+    .node {
+        background-image: url(assets/nodejs.svg);
+        min-width: 42px;
+    }
+
+    .react {
+        background-image: url(assets/react.png);
+        min-width: 51.5px;
+        min-height: 45px;
+    }
+    
+    #fproj{
+        font-size: 2.25rem;
+    }
+    #sidebar {
+        gap: 6px;
+    }
+    #sidebar a{
+        padding: 2px;
+    }
+}
